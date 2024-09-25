@@ -43,5 +43,17 @@ namespace CalculatorAPI.Controllers
             return Ok(result);
         }
 
+        // GET modular division
+        [HttpGet("modulo")]
+        public ActionResult<decimal> Modulo(decimal param1, decimal param2)
+        {
+            if (param2 == 0)
+            {
+                return BadRequest("Cannot perform modulo by zero.");
+            }
+            var result = param1 % param2;
+            return Ok(result);
+        }
+
     }
 }
