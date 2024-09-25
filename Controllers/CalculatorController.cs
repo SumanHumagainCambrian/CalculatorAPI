@@ -23,6 +23,25 @@ namespace CalculatorAPI.Controllers
             return Ok(result);
         }
 
+        // GET multiply action
+        [HttpGet("multiply")]
+        public ActionResult<decimal> Multiply(decimal param1, decimal param2)
+        {
+            var result = param1 * param2;
+            return Ok(result);
+        }
+
+        // GET divide action
+        [HttpGet("divide")]
+        public ActionResult<decimal> Divide(decimal param1, decimal param2)
+        {
+            if(param2 == 0)
+            {
+                return BadRequest("Divide by zero expection");
+            }
+            var result = param1 / param2;
+            return Ok(result);
+        }
 
     }
 }
