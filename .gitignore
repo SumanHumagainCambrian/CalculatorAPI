@@ -1,0 +1,49 @@
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userprefs
+*.sln.docstates
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+# Rider files
+.idea/
+*.sln.iml
+
+# DotNet Core files
+appsettings.Development.json
+appsettings.json
+appsettings.*.json
+
+# Logs
+logs/
+*.log
+
+# Publish output
+publish/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Visual Studio Code files
+.vscode/
+
+# Package files
+*.nupkg
+*.snupkg
+
+# User secrets
+secrets.json
+
+# npm packages
+node_modules/
+package-lock.json
+yarn-error.log
+
+# Visual Studio 2019 files
+*.vs/
+.vsconfig
